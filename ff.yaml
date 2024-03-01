@@ -26,5 +26,33 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+  - flag:
+      name: vghg
+      identifier: vghg
+      description: ""
+      permanent: false
+      spec:
+        type: string
+        default:
+          onVariation: cvb
+          offVariation: cvb
+        variations:
+        - identifier: cvb
+          value: cvbcvb
+        - identifier: cvbcvb
+          value: cvbcv
+        - identifier: zxzxc
+          value: zxcx
+      environments:
+      - identifier: staging
+        default:
+          onVariation: cvb
+          offVariation: cvb
+        state: "off"
+      - identifier: production
+        default:
+          onVariation: cvb
+          offVariation: cvb
+        state: "off"
   projectIdentifier: default_project
   orgIdentifier: default
