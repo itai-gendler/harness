@@ -43,6 +43,10 @@ featureFlags:
           value: cvbcv
         - identifier: zxzxc
           value: zxcx
+      prerequisites:
+      - flagIdentifier: feature_1
+        variations:
+        - "true"
       environments:
       - identifier: staging
         default:
