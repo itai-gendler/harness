@@ -3,7 +3,7 @@ featureFlags:
   - flag:
       name: feature-1
       identifier: feature_1
-      description: blabla
+      description: asdad
       permanent: false
       spec:
         type: boolean
