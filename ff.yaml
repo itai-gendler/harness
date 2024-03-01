@@ -52,14 +52,14 @@ featureFlags:
         default:
           onVariation: cvb
           offVariation: cvb
-        state: "off"
+        state: "on"
         targetRules:
-        - targets:
-          - identifier: fghfgh
-          variation: cvbcvb
         - targets:
           - identifier: nodeserversdk
           variation: cvb
+        - targets:
+          - identifier: fghfgh
+          variation: cvbcvb
       - identifier: production
         default:
           onVariation: cvb
