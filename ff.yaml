@@ -53,13 +53,22 @@ featureFlags:
           onVariation: cvb
           offVariation: cvb
         state: "on"
+        rules:
+        - priority: 0
+          serve:
+            serveVariation: cvb
+          clauses:
+          - attribute: ""
+            op: segmentMatch
+            values:
+            - fdgdfg
         targetRules:
-        - targets:
-          - identifier: nodeserversdk
-          variation: cvb
         - targets:
           - identifier: fghfgh
           variation: cvbcvb
+        - targets:
+          - identifier: nodeserversdk
+          variation: cvb
       - identifier: production
         default:
           onVariation: cvb
